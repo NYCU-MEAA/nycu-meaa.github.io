@@ -1,5 +1,6 @@
 baseURL: "/"
 languageCode: "zh-tw"
+defaultContentLanguage: "zh-tw"
 title: "NYCU MEAA | 交大機械系友會"
 theme: "Hextra"
 
