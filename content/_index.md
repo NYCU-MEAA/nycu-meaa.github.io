@@ -8,8 +8,15 @@ title: NYCU MEAA | 交大機械系友會
 
 誠摯邀請各屆系友返校，共同見證交大機械系半世紀的榮耀與傳承。
 
-- [👉 活動詳情與日程](/anniversary/)
-- [👉 立即報名 (4/07 截止)](https://forms.gle/6VhvVg48gQavG5Pj6)
+{{< hextra/hero-button text="立即報名 (4/07 截止)" link="https://forms.gle/6VhvVg48gQavG5Pj6" >}}
+{{< hextra/hero-button text="查看 4/11 活動日程" link="/anniversary/" >}}
+
+{{< cards >}}
+  {{< card title="50 週年系慶" icon="calendar" link="/anniversary/" >}}
+  {{< card title="資源對接網絡" icon="users" link="/network/" >}}
+  {{< card title="組織治理專區" icon="book-open" link="/governance/" >}}
+  {{< card title="大師與案例分享" icon="sparkles" link="/community/" >}}
+{{< /cards >}}
 
 ---
 

@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NYCU MEAA | 交大機械系友會 – 系友社群</title>
-    <link>//localhost:57180/community/</link>
+    <link>http://localhost:58934/community/</link>
     <description>Recent content in 系友社群 on NYCU MEAA | 交大機械系友會</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     
-	  <atom:link href="//localhost:57180/community/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:58934/community/index.xml" rel="self" type="application/rss+xml" />
     
     
       
