@@ -1,35 +1,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>NYCU MEAA | 交大機械系友會 – 50 週年系慶</title>
-    <link>//localhost:56651/anniversary/</link>
-    <description>Recent content in 50 週年系慶 on NYCU MEAA | 交大機械系友會</description>
+    <title>NYCU MEAA | 交大機械系友會 – 50 週年系慶公告</title>
+    <link>//localhost:57180/anniversary/</link>
+    <description>Recent content in 50 週年系慶公告 on NYCU MEAA | 交大機械系友會</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     
-	  <atom:link href="//localhost:56651/anniversary/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:57180/anniversary/index.xml" rel="self" type="application/rss+xml" />
     
     
       
         
       
     
-    
-    <item>
-      <title>4/11 五十週年日程</title>
-      <link>//localhost:56651/anniversary/schedule/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:56651/anniversary/schedule/</guid>
-      <description>
-        
-        
-        &lt;h1&gt;系慶大表&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;09:00 報到&lt;/li&gt;
-&lt;li&gt;11:30 慶典午宴&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
     
   </channel>
 </rss>

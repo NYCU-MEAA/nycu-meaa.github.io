@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:56651/anniversary/</loc>
+    <loc>//localhost:57180/network/framework/</loc>
   </url><url>
-    <loc>//localhost:56651/categories/</loc>
+    <loc>//localhost:57180/anniversary/schedule/</loc>
   </url><url>
-    <loc>//localhost:56651/</loc>
+    <loc>//localhost:57180/anniversary/</loc>
   </url><url>
-    <loc>//localhost:56651/tags/</loc>
+    <loc>//localhost:57180/categories/</loc>
   </url><url>
-    <loc>//localhost:56651/community/</loc>
+    <loc>//localhost:57180/</loc>
   </url><url>
-    <loc>//localhost:56651/governance/</loc>
+    <loc>//localhost:57180/tags/</loc>
   </url><url>
-    <loc>//localhost:56651/network/</loc>
+    <loc>//localhost:57180/community/</loc>
+  </url><url>
+    <loc>//localhost:57180/governance/</loc>
+  </url><url>
+    <loc>//localhost:57180/network/</loc>
   </url>
 </urlset>
