@@ -34,7 +34,7 @@ weight: 10
 
 ### 3. 策略論述與核心框架
 如果您感興趣我們背後的運作邏輯（包含數據主權、法人化、以及與學生團隊對接的機制），請參考下方深度文件：
-- [💡 資源對接網絡策略框架 v0.4](/network/framework/)
+- [📄 資源對接網絡策略框架 v0.4 (策略下載)](https://drive.google.com/open?id=16JJfnByGoM_X3yoMXWDHUtapjEkOZEso&usp=drive_copy)
 
 ---
 
