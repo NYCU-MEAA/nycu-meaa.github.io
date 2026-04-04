@@ -41,4 +41,4 @@ type: docs
 
 ### 📝 報名資訊
 為利統計人數與餐點，請於 **115 年 4 月 7 日前** 完成報名：
-[👉 點此進入 Google 表單報名專頁](https://forms.gle/6VhvVg48gQavG5Pj6)
+[👉 點此進入 Google 表單報名專頁](https://forms.gle/7CUFmmg4EyoJUfAq8)

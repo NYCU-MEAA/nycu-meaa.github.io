@@ -26,11 +26,11 @@ weight: 10
 
 ### 1. 資源網絡意願填報 (Google Form)
 不論您是具備傳承意願的「資深前輩」，或是正處於創業、技術攻關期的「中青代」，請透過此表單留下您的連結動能：
-- [👉 五十週年：系友資源對位填報入口](https://forms.gle/6VhvVg48gQavG5Pj6)
+- [👉 五十週年：系友資源對位填報入口](https://forms.gle/7CUFmmg4EyoJUfAq8)
 
 ### 2. 系友會轉型願景簡報 (Slides)
 詳細說明我們如何透過 AI 驅動的營運、階梯式誘因機制、以及「Ground Zero」精煉層來落實資源對接。
-- [📄 2026 系友會轉型策略簡報 (待入)](#)
+- [📄 2026 系友報轉型策略簡報 (Google Drive下載)](https://drive.google.com/open?id=1Yw7PE58re96PtL884jBRi8sMYkfYouOR&usp=drive_copy)
 
 ### 3. 策略論述與核心框架
 如果您感興趣我們背後的運作邏輯（包含數據主權、法人化、以及與學生團隊對接的機制），請參考下方深度文件：
