@@ -10,6 +10,9 @@ weight: 100
 為了讓系友會網站內容保持精簡且專業，我們將所有技術實作細節、數位化心法與建構過程，完整紀錄於【哈爸筆記】中。對於「如何透過數位化工具賦能組織轉型」感興趣的系友，歡迎參考以下深度文章：
 
 ### 🛠 數據工程與自動化
+- **[薪火五十的數位轉型：交大機械系友資源對位引擎開發筆記](https://wuulong.github.io/wuulong-notes-blog/post/2026-04-08-alumni-matching-engine-note/)**
+  *本文詳細紀錄了 2026 系慶資源媒合引擎的開發歷程，包含 C-SH-S-D-A 框架、12小時制時間補正邏輯以及 Phase 1 增量入庫工具鏈的實作心得。*
+
 - **[從意願到落點：系友資源網絡的數據工程實踐](https://wuulong.github.io/wuulong-notes-blog/posts/260404-alumni-resource-data-engineering/)**
   *本文紀錄了我們如何運用 Google Apps Script (GAS) 自動化生成對接表單，並將 2019 年的原始意願數據透過 AI 重新對位並匯入 2026 新版資源網絡系統的完整經驗。*
 
