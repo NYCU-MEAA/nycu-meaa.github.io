@@ -14,12 +14,50 @@ _build:
 ---
 
 ## 1. 核心邏輯：C-SH-S-D-A 框架
+
 本系統將系友會運作拆解為五個原子維度，實現 AI 自動化對位：
 - **C (Committee)**: 誰來辦 (權責委員會)
 - **SH (Stakeholder)**: 誰參與 (系友/學生/行政)
 - **S (Supply)**: 我能給 (價值供給)
 - **D (Demand)**: 我想要 (價值需求)
 - **A (Activity)**: 怎麼換 (具體活動專案)
+
+### **📊 資源網絡邏輯架構 (C-SH-S-D-A)**
+
+```mermaid
+graph TD
+    C[C-Committee 委員會] -->|發起/營運| A[A-Activity 活動方案]
+    SH[SH-Stakeholder 系友/學生/師長] -->|擁有| S[S-Supply 供給標籤]
+    SH -->|提出| D[D-Demand 需求標籤]
+    
+    subgraph "AI 媒合引擎 v0.5"
+    M[Matching Engine]
+    end
+    
+    S --> M
+    D --> M
+    M -->|自動對位| A
+    
+    style M fill:#f96,stroke:#333,stroke-width:2px
+```
+
+### **🔄 數據生命週期與流向圖 (Data Pathway)**
+
+```mermaid
+sequenceDiagram
+    participant User as 系友/學生
+    participant Ingest as GAS (表單/行政錄入)
+    participant AI as Python (Gemini AI 研判)
+    participant DB as SQLite 資料庫
+    participant Out as 媒合通知/看板
+
+    User->>Ingest: 提交意願 (F-01/F-02)
+    Ingest->>AI: Webhook 傳輸 JSON
+    Note over AI: 標籤精煉與語義研判
+    AI->>DB: 寫入結構化數據
+    DB->>AI: 觸發檢檢索與比對
+    AI->>Out: 發布媒合成功與看板更新
+```
 
 ---
 
