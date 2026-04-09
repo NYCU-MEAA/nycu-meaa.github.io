@@ -3,6 +3,7 @@ languageCode: "zh-tw"
 defaultContentLanguage: "zh-tw"
 title: "NYCU MEAA | 交大機械系友會"
 theme: "Hextra"
+copyright: "🚀 本站內容由系友會轉型團隊與 AI 助手深度共創生成"
 
 outputs:
   home: [HTML, RSS, JSON]
