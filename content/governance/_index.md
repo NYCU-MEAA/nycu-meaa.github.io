@@ -12,6 +12,9 @@ type: docs
 
 為了建立長效且穩健的組織運作機制，以下為現行之正式規則：
 
+- **[🆕 第三屆會務人員佈達公告 (2026-2028)](leadership/)**  
+  *公告本屆會長、副會長、秘書長及全體常務委員名單。*
+
 - **[📄 交大機械系系友會：常務委員及會長選舉辦法 v1.0](https://drive.google.com/open?id=1fmFpCM2uxaTIzUOhl94CKmZI1Oe6pLL5&usp=drive_copy)**  
   *本辦法確立了本屆系友會領導層之產生機制。*
 
