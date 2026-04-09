@@ -42,6 +42,8 @@ params:
     enable: true
     nextjs: false # 使用 FlexSearch 模式
   footer:
+    enable: true
     displayCopyright: true
     displayPoweredBy: false
     content: "🚀 本站內容由系友會轉型團隊與 AI 助手深度共創生成"
+    extra: "🚀 本站內容由系友會轉型團隊與 AI 助手深度共創生成"
