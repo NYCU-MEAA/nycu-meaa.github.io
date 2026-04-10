@@ -23,7 +23,7 @@ search: false
 
 ### 4. 組織轉型與資源對接系統
 - **[資源對接網絡系統架構 v0.5.1](framework/)**：建立 C, SH, V, A 代碼標籤體系之開發藍圖。
-- **[📄 F-03 委員會委員招募問卷規格](../../F03_Committee_Recruitment_Spec_v0.1.md)**：五大委員會之實幹人員召募細節。
+- **[📝 G-01 委員會委員公開招募 (正式表單)](https://forms.gle/dSSgfa29Gse7VYRK9)**：對外召募實幹委員的正式填報入口。
 
 ---
 > [!CAUTION]
