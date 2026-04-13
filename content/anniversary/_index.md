@@ -59,10 +59,16 @@ type: docs
 > **建議行程：** 10:00 可先參與博愛校區導覽或全校開幕典禮，**[👉 按此查看：太空系統工程研究所 (ISSE) 導覽時程與地點]({{< relref "isse-visit.md" >}})**。
 > 11:30 務必回到工程五館參加系慶大會。下午 15:00-15:30 工程五館 B1 國際會議廳的 **「系友共商大計」**是本次轉型最關鍵的環節，邀請各位學長在參與校慶論壇之餘，一定要留步與 **學生團隊 (賽車、火箭 等)** 現場交流。
 
-## 🎙️ 現場影音紀錄 (Audio Archives)
+## 🎙️ 慶典影音專區 (Video & Audio)
 
-回顧 4/11 系慶當天的精彩瞬間，特別收錄李志強會長於兩場關鍵時段的致詞：
+回顧 4/11 系慶當天的精彩瞬間，特別收錄以下官方紀實影片與演講音檔：
 
+### 📺 官方影片紀錄
+*   [🎥 **交大機械系 50 週年系慶：5 分鐘精華版**](https://youtu.be/dA2qvuDnM2Y)
+*   [🎥 **交大機械系 50 週年系慶：完整版紀錄**](https://youtu.be/DnilY4FZjEo)
+
+### 🎧 會長現場致詞音檔
+特別收錄李志強會長於兩場關鍵時段的轉型宣示：
 *   [🎧 **系上會長致詞 (工程五館現場)**](https://drive.google.com/open?id=1eXL82nn_mKmktTs--BXnl29P7qyL9UrN&usp=drive_copy)
 *   [🎧 **圖書館會長致詞 (傑出系友交流會)**](https://drive.google.com/open?id=1pNwIpAinMO-PJsuD-DXCPQeLuEzj9pEH&usp=drive_copy)
 
