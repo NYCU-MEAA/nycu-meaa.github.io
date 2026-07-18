@@ -2,10 +2,9 @@
 title: "[內部管理] 系友會專案贊助作業架構：以竹湖火箭隊為例"
 description: "針對 2026 竹湖火箭隊赴美競賽 110 萬旅費募款，建立系友會標準審核、信任建立、募款策略及交大專戶金流的執行守則。"
 date: 2026-04-28
-author: "系友會秘書處"
-type: docs
-active: true
-weight: 20
+draft: false
+_build:
+  list: never
 ---
 
 # 🚀 [內部 SOP] 系友會專案贊助作業架構
