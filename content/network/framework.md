@@ -1,10 +1,9 @@
 ---
-title: 資源對接網絡框架
+title: 機械系系友會：資源對接網絡框架 (Alumni Resource Network Framework)
 type: docs
 sidebar:
   open: true
 ---
-# 機械系系友會：資源對接網絡框架 (Alumni Resource Network Framework)
 - version: v0.4
 
 ## 專案背景：五十週年系慶與組織演化
