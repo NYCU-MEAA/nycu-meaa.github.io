@@ -51,7 +51,11 @@ pie title 🎯 需求端分佈 (我正需要什麼)
 請點選下方區塊，查看我們目前正在推動的關鍵對接計畫：
 
 {{< cards >}}
-  {{< card link="framework/" title="系統架構與標籤字典" icon="arrow-circle-right" subtitle="了解 C-SH-S-D-A 框架，如何將模糊的熱情轉化為精確的標籤對位。" >}}
+  {{< card link="speaker-pool/" title="🎤 亮點業師演講與主題" icon="user" subtitle="挑選已勾選願意回校進行分享的資深系友演講主題（去識別化）。" >}}
+  {{< card link="visit-companies/" title="🏭 企業與工廠參訪名單" icon="book-open" subtitle="查看開放廠區或企業參訪的系友企業名冊（去識別化）。" >}}
+  {{< card link="mentorship/" title="⚡️ 系友閃電諮詢" icon="sparkles" subtitle="了解 30 分鐘的高效智慧傳承機制，如何進行對位請益。" >}}
+  {{< card link="relay-mixer/" title="🤝 產學接力小聚" icon="users" subtitle="收集業界苦主痛點與系上科研亮點，落實雙軌產學媒合。" >}}
+  {{< card link="framework/" title="🛡️ 系統架構與標籤字典" icon="arrow-circle-right" subtitle="了解 C-SH-S-D-A 框架，如何將模糊的熱情轉化為精確的標籤對位。" >}}
 {{< /cards >}}
 
 

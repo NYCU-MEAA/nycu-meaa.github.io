@@ -1,0 +1,195 @@
+{{ $speakers := .Site.Data.speaker_pool }}
+
+{{ $.Scratch.Delete "cat_ai" }}
+{{ range $speakers }}
+  {{ if or (findRE `(?i)(AI|LLM|物聯網|感測器|開源|軟硬體|雲端|演算法)` .expertise) (findRE `(?i)(AI|LLM|物聯網|感測器|開源|軟硬體|雲端|演算法)` .topic) }}
+    {{ $.Scratch.Add "cat_ai" (slice .) }}
+  {{ end }}
+{{ end }}
+{{ $cat_ai := $.Scratch.Get "cat_ai" }}
+
+{{ $.Scratch.Delete "cat_robot" }}
+{{ range $speakers }}
+  {{ $comp := .company }}
+  {{ $is_ai := false }}{{ range $cat_ai }}{{ if eq .company $comp }}{{ $is_ai = true }}{{ end }}{{ end }}
+  {{ if and (not $is_ai) (or (findRE `(?i)(機器人|自動化|控制|電機)` .expertise) (findRE `(?i)(機器人|自動化|控制|電機)` .topic)) }}
+    {{ $.Scratch.Add "cat_robot" (slice .) }}
+  {{ end }}
+{{ end }}
+{{ $cat_robot := $.Scratch.Get "cat_robot" }}
+
+{{ $.Scratch.Delete "cat_bio" }}
+{{ range $speakers }}
+  {{ $comp := .company }}
+  {{ $is_ai := false }}{{ range $cat_ai }}{{ if eq .company $comp }}{{ $is_ai = true }}{{ end }}{{ end }}
+  {{ $is_robot := false }}{{ range $cat_robot }}{{ if eq .company $comp }}{{ $is_robot = true }}{{ end }}{{ end }}
+  {{ if and (not $is_ai) (not $is_robot) (or (findRE `(?i)(生醫|醫療|奈米|材料|生物)` .expertise) (findRE `(?i)(生醫|醫療|奈米|材料|生物)` .topic)) }}
+    {{ $.Scratch.Add "cat_bio" (slice .) }}
+  {{ end }}
+{{ end }}
+{{ $cat_bio := $.Scratch.Get "cat_bio" }}
+
+{{ $.Scratch.Delete "cat_mgmt" }}
+{{ range $speakers }}
+  {{ $comp := .company }}
+  {{ $is_ai := false }}{{ range $cat_ai }}{{ if eq .company $comp }}{{ $is_ai = true }}{{ end }}{{ end }}
+  {{ $is_robot := false }}{{ range $cat_robot }}{{ if eq .company $comp }}{{ $is_robot = true }}{{ end }}{{ end }}
+  {{ $is_bio := false }}{{ range $cat_bio }}{{ if eq .company $comp }}{{ $is_bio = true }}{{ end }}{{ end }}
+  {{ if and (not $is_ai) (not $is_robot) (not $is_bio) (or (findRE `(?i)(經營|管理|策略|溝通|銷售|企管|顧問)` .expertise) (findRE `(?i)(經營|管理|策略|溝通|銷售|企管|顧問)` .company) (findRE `(?i)(經營|管理|策略|溝通|銷售|企管|顧問)` .topic)) }}
+    {{ $.Scratch.Add "cat_mgmt" (slice .) }}
+  {{ end }}
+{{ end }}
+{{ $cat_mgmt := $.Scratch.Get "cat_mgmt" }}
+
+{{ $.Scratch.Delete "cat_other" }}
+{{ range $speakers }}
+  {{ $comp := .company }}
+  {{ $is_ai := false }}{{ range $cat_ai }}{{ if eq .company $comp }}{{ $is_ai = true }}{{ end }}{{ end }}
+  {{ $is_robot := false }}{{ range $cat_robot }}{{ if eq .company $comp }}{{ $is_robot = true }}{{ end }}{{ end }}
+  {{ $is_bio := false }}{{ range $cat_bio }}{{ if eq .company $comp }}{{ $is_bio = true }}{{ end }}{{ end }}
+  {{ $is_mgmt := false }}{{ range $cat_mgmt }}{{ if eq .company $comp }}{{ $is_mgmt = true }}{{ end }}{{ end }}
+  {{ if and (not $is_ai) (not $is_robot) (not $is_bio) (not $is_mgmt) }}
+    {{ $.Scratch.Add "cat_other" (slice .) }}
+  {{ end }}
+{{ end }}
+{{ $cat_other := $.Scratch.Get "cat_other" }}
+
+<h3>🧠 AI、資通訊與智慧化工廠領域</h3>
+{{ if $cat_ai }}
+<div class="hx-overflow-x-auto hx-mt-4">
+  <table class="hx-w-full hx-border-collapse hx-text-left">
+    <thead>
+      <tr class="hx-border-b hx-border-neutral-200 dark:hx-border-neutral-800">
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 22%;">級別與姓氏</th>
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 25%;">服務單位 / 職稱</th>
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 38%;">可分享主題與描述</th>
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 15%;">核心專長</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $cat_ai }}
+      <tr class="hx-border-b hx-border-neutral-100 dark:hx-border-neutral-900">
+        <td class="hx-px-4 hx-py-2 hx-font-bold hx-text-sm">{{ .class_info }}級 {{ .surname }}學長</td>
+        <td class="hx-px-4 hx-py-2 hx-text-sm">{{ if .company }}{{ .company }}{{ if .title }} - {{ .title }}{{ end }}{{ else }}（未提供）{{ end }}</td>
+        <td class="hx-px-4 hx-py-2 hx-text-sm hx-leading-relaxed">{{ .topic | markdownify }}</td>
+        <td class="hx-px-4 hx-py-2 hx-text-sm hx-text-neutral-500 dark:hx-text-neutral-400">{{ .expertise }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+{{ else }}
+<p class="hx-text-sm hx-text-neutral-500"><em>（目前此分類尚無登錄資源）</em></p>
+{{ end }}
+
+<h3 class="hx-mt-8">🤖 機器人、自動化與精密控制領域</h3>
+{{ if $cat_robot }}
+<div class="hx-overflow-x-auto hx-mt-4">
+  <table class="hx-w-full hx-border-collapse hx-text-left">
+    <thead>
+      <tr class="hx-border-b hx-border-neutral-200 dark:hx-border-neutral-800">
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 22%;">級別與姓氏</th>
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 25%;">服務單位 / 職稱</th>
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 38%;">可分享主題與描述</th>
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 15%;">核心專長</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $cat_robot }}
+      <tr class="hx-border-b hx-border-neutral-100 dark:hx-border-neutral-900">
+        <td class="hx-px-4 hx-py-2 hx-font-bold hx-text-sm">{{ .class_info }}級 {{ .surname }}學長</td>
+        <td class="hx-px-4 hx-py-2 hx-text-sm">{{ if .company }}{{ .company }}{{ if .title }} - {{ .title }}{{ end }}{{ else }}（未提供）{{ end }}</td>
+        <td class="hx-px-4 hx-py-2 hx-text-sm hx-leading-relaxed">{{ .topic | markdownify }}</td>
+        <td class="hx-px-4 hx-py-2 hx-text-sm hx-text-neutral-500 dark:hx-text-neutral-400">{{ .expertise }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+{{ else }}
+<p class="hx-text-sm hx-text-neutral-500"><em>（目前此分類尚無登錄資源）</em></p>
+{{ end }}
+
+<h3 class="hx-mt-8">🧬 生醫工程與生醫晶片領域</h3>
+{{ if $cat_bio }}
+<div class="hx-overflow-x-auto hx-mt-4">
+  <table class="hx-w-full hx-border-collapse hx-text-left">
+    <thead>
+      <tr class="hx-border-b hx-border-neutral-200 dark:hx-border-neutral-800">
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 22%;">級別與姓氏</th>
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 25%;">服務單位 / 職稱</th>
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 38%;">可分享主題與描述</th>
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 15%;">核心專長</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $cat_bio }}
+      <tr class="hx-border-b hx-border-neutral-100 dark:hx-border-neutral-900">
+        <td class="hx-px-4 hx-py-2 hx-font-bold hx-text-sm">{{ .class_info }}級 {{ .surname }}學長</td>
+        <td class="hx-px-4 hx-py-2 hx-text-sm">{{ if .company }}{{ .company }}{{ if .title }} - {{ .title }}{{ end }}{{ else }}（未提供）{{ end }}</td>
+        <td class="hx-px-4 hx-py-2 hx-text-sm hx-leading-relaxed">{{ .topic | markdownify }}</td>
+        <td class="hx-px-4 hx-py-2 hx-text-sm hx-text-neutral-500 dark:hx-text-neutral-400">{{ .expertise }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+{{ else }}
+<p class="hx-text-sm hx-text-neutral-500"><em>（目前此分類尚無登錄資源）</em></p>
+{{ end }}
+
+<h3 class="hx-mt-8">💼 企業經營、顧問與策略管理領域</h3>
+{{ if $cat_mgmt }}
+<div class="hx-overflow-x-auto hx-mt-4">
+  <table class="hx-w-full hx-border-collapse hx-text-left">
+    <thead>
+      <tr class="hx-border-b hx-border-neutral-200 dark:hx-border-neutral-800">
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 22%;">級別與姓氏</th>
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 25%;">服務單位 / 職稱</th>
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 38%;">可分享主題與描述</th>
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 15%;">核心專長</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $cat_mgmt }}
+      <tr class="hx-border-b hx-border-neutral-100 dark:hx-border-neutral-900">
+        <td class="hx-px-4 hx-py-2 hx-font-bold hx-text-sm">{{ .class_info }}級 {{ .surname }}學長</td>
+        <td class="hx-px-4 hx-py-2 hx-text-sm">{{ if .company }}{{ .company }}{{ if .title }} - {{ .title }}{{ end }}{{ else }}（未提供）{{ end }}</td>
+        <td class="hx-px-4 hx-py-2 hx-text-sm hx-leading-relaxed">{{ .topic | markdownify }}</td>
+        <td class="hx-px-4 hx-py-2 hx-text-sm hx-text-neutral-500 dark:hx-text-neutral-400">{{ .expertise }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+{{ else }}
+<p class="hx-text-sm hx-text-neutral-500"><em>（目前此分類尚無登錄資源）</em></p>
+{{ end }}
+
+<h3 class="hx-mt-8">💡 通用經驗傳承與諮詢分享</h3>
+{{ if $cat_other }}
+<div class="hx-overflow-x-auto hx-mt-4">
+  <table class="hx-w-full hx-border-collapse hx-text-left">
+    <thead>
+      <tr class="hx-border-b hx-border-neutral-200 dark:hx-border-neutral-800">
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 22%;">級別與姓氏</th>
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 25%;">服務單位 / 職稱</th>
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 38%;">可分享主題與描述</th>
+        <th class="hx-px-4 hx-py-2 hx-font-semibold hx-text-sm" style="width: 15%;">核心專長</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $cat_other }}
+      <tr class="hx-border-b hx-border-neutral-100 dark:hx-border-neutral-900">
+        <td class="hx-px-4 hx-py-2 hx-font-bold hx-text-sm">{{ .class_info }}級 {{ .surname }}學長</td>
+        <td class="hx-px-4 hx-py-2 hx-text-sm">{{ if .company }}{{ .company }}{{ if .title }} - {{ .title }}{{ end }}{{ else }}（未提供）{{ end }}</td>
+        <td class="hx-px-4 hx-py-2 hx-text-sm hx-leading-relaxed">{{ .topic | markdownify }}</td>
+        <td class="hx-px-4 hx-py-2 hx-text-sm hx-text-neutral-500 dark:hx-text-neutral-400">{{ .expertise }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+{{ else }}
+<p class="hx-text-sm hx-text-neutral-500"><em>（目前此分類尚無登錄資源）</em></p>
+{{ end }}
