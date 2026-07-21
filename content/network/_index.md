@@ -53,6 +53,8 @@ pie title 🎯 需求端分佈 (我正需要什麼)
 {{< cards >}}
   {{< card link="speaker-pool/" title="🎤 亮點業師演講與主題" icon="user" subtitle="挑選已勾選願意回校進行分享的資深系友演講主題（去識別化）。" >}}
   {{< card link="visit-companies/" title="🏭 企業與工廠參訪名單" icon="book-open" subtitle="查看開放廠區或企業參訪的系友企業名冊（去識別化）。" >}}
+  {{< card link="events/" title="📢 系友交流活動公告" icon="calendar" subtitle="系友自主發起之大型研討會、班級聚會或產業論壇公告資訊。" >}}
+  {{< card link="jobs/" title="💼 系友徵才與工讀看板" icon="briefcase" subtitle="查看系友企業專屬的正職、實習或兼職工讀募集資訊。" >}}
   {{< card link="mentorship/" title="⚡️ 系友閃電諮詢" icon="sparkles" subtitle="了解 30 分鐘的高效智慧傳承機制，如何進行對位請益。" >}}
   {{< card link="relay-mixer/" title="🤝 產學接力小聚" icon="users" subtitle="收集業界苦主痛點與系上科研亮點，落實雙軌產學媒合。" >}}
   {{< card link="framework/" title="🛡️ 系統架構與標籤字典" icon="arrow-circle-right" subtitle="了解 C-SH-S-D-A 框架，如何將模糊的熱情轉化為精確的標籤對位。" >}}
