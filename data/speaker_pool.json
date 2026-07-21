@@ -70,5 +70,14 @@
     "topic": "可以舉辦研討會，當講師",
     "expertise": "",
     "location": ""
+  },
+  {
+    "class_info": "B79A",
+    "surname": "李",
+    "company": "Amazon Web Service",
+    "title": "APAC leader AI/ML MQR",
+    "topic": "資通訊產業30 年以上系統設計研發，製造，專案，供應鏈管理。目前專注於資料中心人工智慧伺服器機櫃。",
+    "expertise": "AI, IoT, Networking",
+    "location": "台北市信義區"
   }
 ]
