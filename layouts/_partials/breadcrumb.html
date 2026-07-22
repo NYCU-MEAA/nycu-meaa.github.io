@@ -1,0 +1,20 @@
+{{- $page := .page -}}
+{{- $enable := .enable -}}
+{{- if (default $enable $page.Params.breadcrumbs) -}}
+  <div class="hx:mt-1.5 hx:flex hx:items-center hx:gap-1 hx:overflow-hidden hx:text-sm hx:text-gray-500 hx:dark:text-gray-400 hx:contrast-more:text-current">
+    {{- $ancestors := slice -}}
+    {{- range $page.Ancestors.Reverse -}}
+      {{- if not .IsHome -}}
+        {{- $ancestors = $ancestors | append . -}}
+      {{- end -}}
+    {{- end -}}
+    {{- range $index, $ancestor := $ancestors -}}
+      {{- if $index -}}
+        {{- partial "utils/icon.html" (dict "name" "chevron-right" "attributes" "class=\"hx:w-3.5 hx:shrink-0 hx:rtl:-rotate-180\"") -}}
+      {{- end -}}
+      <div class="hx:whitespace-nowrap hx:transition-colors hx:min-w-[24px] hx:overflow-hidden hx:text-ellipsis hx:hover:text-gray-900 hx:dark:hover:text-gray-100">
+        <a href="{{ $ancestor.RelPermalink }}" class="hx:inline-block hx:rounded-sm hx:hextra-focus-visible-inset">{{- partial "utils/title" $ancestor -}}</a>
+      </div>
+    {{- end -}}
+  </div>
+{{ end -}}

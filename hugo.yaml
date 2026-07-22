@@ -17,8 +17,8 @@ languages:
     languageName: "繁體中文"
     menu:
       main:
-        - name: "50 週年系慶"
-          url: "/anniversary/"
+        - name: "活動專區"
+          url: "/activities/"
           weight: 10
         - name: "資源對接"
           url: "/network/"

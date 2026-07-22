@@ -38,7 +38,7 @@ graph TD
     subgraph "委員會運作模式"
         C_Chair["主委 (Chair)"]
         C_VChair["副主委 (Vice Chair)"]
-        C_Members["實幹委員 (Working Members)"]
+        C_Members["委員 (Working Members)"]
         
         C_Chair -- "委派" --> C_VChair
         C_Members -- "推舉/加入" --> C_Chair
