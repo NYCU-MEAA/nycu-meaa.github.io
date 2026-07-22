@@ -12,7 +12,7 @@ weight: 60
 ## ⚡️ 即刻提案您的活動
 如果您正準備舉辦交流活動，且希望發佈在系友會官網以募集參與者，請點擊下方表單進行提案登記：
 
-{{< hextra/hero-button text="填寫 F-06 交流活動提案表單" link="https://forms.gle/pfkqmAQEoU9hCt4X8" >}}
+{{< hextra/hero-button text="填寫 F-06 交流活動擴散表單" link="https://forms.gle/pfkqmAQEoU9hCt4X8" >}}
 
 
 
