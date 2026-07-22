@@ -45,6 +45,15 @@
     "location": "新北市汐止區"
   },
   {
+    "class_info": "B79A",
+    "surname": "李",
+    "company": "Amazon Web Service",
+    "title": "APAC leader AI/ML MQR",
+    "topic": "資通訊產業30 年以上系統設計研發，製造，專案，供應鏈管理。目前專注於資料中心人工智慧伺服器機櫃。",
+    "expertise": "AI, IoT, Networking",
+    "location": "台北市信義區"
+  },
+  {
     "class_info": "84A",
     "surname": "許",
     "company": "LASS-開源公益環境感測網路",
@@ -61,23 +70,5 @@
     "topic": "可以指導學弟專案，可以舉辦跟老師的小聚",
     "expertise": "",
     "location": "新竹縣竹北市"
-  },
-  {
-    "class_info": "76",
-    "surname": "林",
-    "company": "宇一企管",
-    "title": "創辦人",
-    "topic": "可以舉辦研討會，當講師",
-    "expertise": "",
-    "location": ""
-  },
-  {
-    "class_info": "B79A",
-    "surname": "李",
-    "company": "Amazon Web Service",
-    "title": "APAC leader AI/ML MQR",
-    "topic": "資通訊產業30 年以上系統設計研發，製造，專案，供應鏈管理。目前專注於資料中心人工智慧伺服器機櫃。",
-    "expertise": "AI, IoT, Networking",
-    "location": "台北市信義區"
   }
 ]
