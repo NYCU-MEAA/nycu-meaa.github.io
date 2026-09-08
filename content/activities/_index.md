@@ -13,5 +13,6 @@ sidebar:
 ## 🚀 歷年活動與回顧
 
 {{< cards >}}
+  {{< card title="大學部系友講座" icon="sparkles" link="2026-alumni-lectures/" >}}
   {{< card title="50 週年系慶" icon="calendar" link="anniversary/" >}}
 {{< /cards >}}
