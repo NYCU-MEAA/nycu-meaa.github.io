@@ -14,5 +14,6 @@ sidebar:
 
 {{< cards >}}
   {{< card title="大學部系友講座" icon="sparkles" link="2026-alumni-lectures/" >}}
+  {{< card title="[草案] 回娘家與師門機制" icon="user-group" link="homecoming-scheme/" >}}
   {{< card title="50 週年系慶" icon="calendar" link="anniversary/" >}}
 {{< /cards >}}
